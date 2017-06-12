@@ -1,0 +1,84 @@
+// Все элементы формы
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='url'],
+input[type='search'],
+input[type='password'],
+textarea,
+select {
+  width: 100%;
+  max-width: 100%;
+  background: none;
+  outline: 0 none;
+  border: 1px solid #dedede;
+  padding: 15px;
+  color: #333;
+  background-color: #fff;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+/*-------.form"-------*/
+
+.form {
+  overflow: hidden;
+  max-width: 64.4rem;
+  margin: 0 auto;
+  border-top: 2px solid #666666;
+  border-bottom: 2px solid #666666;
+
+  input {
+    float: left;
+    max-width: 46rem;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 0;
+    margin: 3px 0 3px 10px;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    color: #666666;
+    font-family: $font-family-Garamond_Premr_Pro;
+    font-size: $font-size;
+
+    @include max-w($screen-sm) {
+      max-width:29.6rem;
+    }
+
+    @include max-w($screen-xs) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .fa-chevron-right {
+    display: inline-block;
+    padding-left: 36px;
+  }
+
+  .form__border {
+    width: 2px;
+    float: left;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border-right: 2px solid #666666;
+    overflow: hidden;
+
+    @include max-w($screen-xs) {
+      display: none;
+    }
+  }
+}
+
+.form-button:focus {
+  outline: none;
+}
+
+input{
+  -webkit-box-shadow: inset 0 0 0 50px #fff;
+  -webkit-text-fill-color: #000;
+}

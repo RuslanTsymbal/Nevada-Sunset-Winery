@@ -1,0 +1,35 @@
+.page-header {
+  width: 100%;
+  padding-top: 24.7rem;
+  padding-bottom: 24.7rem;
+  margin: 0;
+  background-image: url(../images/bg-top.jpg);
+  background-size: cover;
+  background-position: 50% 100%;
+
+  @include max-w($screen-sm) {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  &__block {
+    max-width: 392px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: $body-bg;
+  }
+
+  &__logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border: 2px solid #79093f;
+
+    img {
+      @include max-w($screen-xs) {
+        max-width: 83%;
+        margin: 0 auto;
+      }
+    }
+  }
+}

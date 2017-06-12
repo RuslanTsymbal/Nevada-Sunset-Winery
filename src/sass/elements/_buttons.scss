@@ -1,0 +1,26 @@
+// Кнопки
+
+.form-button {
+  float: left;
+  width: 16.2rem;
+  margin: 3px 10px 3px 0;
+  padding: 9px 0 9px 51px;
+  background-color: $body-bg;
+  border-top: 1px solid #666666;
+  border-bottom: 1px solid #666666;
+  border-left: none;
+  border-right: none;
+  color: #781241;
+  font-family: $font-family-Oswald;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+
+  &:hover {
+    color: #303030;
+  }
+
+  @include max-w($screen-xs) {
+    width: 100%;
+  }
+}

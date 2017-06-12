@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'GaramondPremrPro-Disp';
+  src: url('GaramondPremrPro-Disp.eot?#iefix') format('embedded-opentype'),  url('GaramondPremrPro-Disp.otf')  format('opentype'),
+	     url('GaramondPremrPro-Disp.woff') format('woff'), url('GaramondPremrPro-Disp.ttf')  format('truetype'), url('GaramondPremrPro-Disp.svg#GaramondPremrPro-Disp') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
