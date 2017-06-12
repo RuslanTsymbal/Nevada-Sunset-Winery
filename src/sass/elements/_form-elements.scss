@@ -45,12 +45,19 @@ select {
     font-family: $font-family-Garamond_Premr_Pro;
     font-size: $font-size;
 
+
     @include max-w($screen-sm) {
       max-width:29.6rem;
     }
 
+    @include max-w(375px) {
+      max-width: 21.6rem;
+    }
+
     @include max-w($screen-xs) {
-      width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+      padding-right: 0;
       text-align: center;
     }
   }
@@ -81,4 +88,17 @@ select {
 input{
   -webkit-box-shadow: inset 0 0 0 50px #fff;
   -webkit-text-fill-color: #000;
+}
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .form {
+      overflow: hidden;
+      max-width: 65.4rem;
+
+    input {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
 }

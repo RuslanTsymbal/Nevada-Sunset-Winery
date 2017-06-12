@@ -20,7 +20,13 @@
     color: #303030;
   }
 
+  @include max-w(375px) {
+    width: 13.7rem;
+    padding: 9px 0 9px 26px;
+  }
+
   @include max-w($screen-xs) {
     width: 100%;
+    padding: 9px 0 9px 0;
   }
 }
