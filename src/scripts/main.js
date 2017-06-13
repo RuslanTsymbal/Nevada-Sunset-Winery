@@ -24,10 +24,21 @@ $(document).ready(function() {
        });
     } else{
     $('.form input[name=email]').val("");
+
+    //border form - green
     $(".form").css({
+         borderTop: "2px solid green",
+         borderBottom: "2px solid green"
+       });
+
+    //border form - gray
+    setTimeout(
+      function(){
+         $(".form").css({
          borderTop: "2px solid #666666",
          borderBottom: "2px solid #666666"
        });
+      }, 1500);
     }
   })
 
@@ -52,6 +63,12 @@ $(document).ready(function() {
     speed: 500,
     fade: true,
     cssEase: 'linear'
+  });
+
+  //form - mailchimp
+
+  $('.form').ajaxChimp({
+    url: 'http://blahblah.us1.list-manage.com/subscribe/post?u=5afsdhfuhdsiufdba6f8802&id=4djhfdsh9'
   });
 
 });
