@@ -3,10 +3,10 @@ $(document).ready(function() {
   // Set the event handler focus (#email-user)
 
   $('#email-user').focus(function(){
-       $(".form").css({
-         borderTop: "2px solid #781241",
-         borderBottom: "2px solid #781241"
-       });
+      $(".form").css({
+        borderTop: "2px solid #781241",
+        borderBottom: "2px solid #781241"
+      });
   });
 
   //Validation email
@@ -18,23 +18,23 @@ $(document).ready(function() {
       && str.includes('.');
 
     if(!correct){
-       $(".form").css({
-         borderTop: "2px solid #ff0000",
-         borderBottom: "2px solid #ff0000"
-       });
+      $(".form").css({
+        borderTop: "2px solid #ff0000",
+        borderBottom: "2px solid #ff0000"
+      });
     } else{
     $('.form input[name=email]').val("");
 
     //border form - green
     $(".form").css({
-         borderTop: "2px solid green",
-         borderBottom: "2px solid green"
-       });
+        borderTop: "2px solid green",
+        borderBottom: "2px solid green"
+      });
 
     //border form - gray
     setTimeout(
       function(){
-         $(".form").css({
+        $(".form").css({
          borderTop: "2px solid #666666",
          borderBottom: "2px solid #666666"
        });
@@ -48,9 +48,9 @@ $(document).ready(function() {
     $(document).click(function(event) {
       if ($(event.target).closest(".form").length) return;
        $(".form").css({
-           borderTop: "2px solid #666666",
-           borderBottom: "2px solid #666666"
-         });
+          borderTop: "2px solid #666666",
+          borderBottom: "2px solid #666666"
+        });
       event.stopPropagation();
     });
   });
