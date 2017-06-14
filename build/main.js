@@ -31,7 +31,7 @@ $(document).ready(function() {
       event.preventDefault();
       // Get data from form and store it
       var pfbSignupEMAIL = $('#email-user').val();
-      $('.form input[name=email]').val("");
+      // var e = $('.form input[name=email]').val("");
       // Create JSON variable of retreived data
       var pfbSignupData = {
         'emailname': pfbSignupEMAIL

@@ -20,6 +20,16 @@ select {
   margin-bottom: 12px;
 }
 
+input {
+    width: 100%;
+    background: none;
+    outline: 0 none;
+    border: 1px solid #dedede;
+    padding: 15px;
+    color: #333;
+    background-color: #fff;
+}
+
 /*-------.form"-------*/
 
 .form {
